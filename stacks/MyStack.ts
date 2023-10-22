@@ -16,8 +16,6 @@ export function API({ stack }: StackContext) {
     },
     routes: {
       "GET /": "packages/functions/src/lambda.handler",
-      "GET /user/{email}": "backend/api/lambda.getUser",
-      "POST /user": "backend/api/lambda.addUser",
     },
   });
 
