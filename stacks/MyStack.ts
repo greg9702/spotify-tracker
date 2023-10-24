@@ -10,12 +10,12 @@ export function API({ stack }: StackContext) {
   });
   const api = new Api(stack, "api", {
     defaults: {
-      function: {
-        bind: [table],
-      },
+      function: {},
     },
     routes: {
       "GET /": "packages/functions/src/lambda.handler",
+      "GET /user/{email}": "backend/api/lambda.getUser",
+      "POST /user": "backend/api/lambda.addUser",
     },
   });
 
