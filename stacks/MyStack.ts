@@ -9,6 +9,7 @@ export function API({ stack }: StackContext) {
       "GET /configuration": "packages/functions/src/configuration/get.handler",
       "POST /configuration":
         "packages/functions/src/configuration/create.handler",
+      "GET /hello": "packages/functions/src/lambda.handler",
     },
   });
 
