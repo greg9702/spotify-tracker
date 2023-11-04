@@ -1,6 +1,6 @@
 import { StackContext, Api } from "sst/constructs";
 
-export function API({ stack }: StackContext) {
+export function ApiStack({ stack }: StackContext) {
   const api = new Api(stack, "api", {
     defaults: {
       function: {},
@@ -16,4 +16,8 @@ export function API({ stack }: StackContext) {
   stack.addOutputs({
     ApiEndpoint: api.url,
   });
+
+  return {
+    api,
+  };
 }
