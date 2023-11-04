@@ -1,3 +1,4 @@
+import Hello from "./Hello";
 import "./Home.css";
 
 export default function Home() {
@@ -6,6 +7,7 @@ export default function Home() {
       <div className="lander">
         <h1>Scratch</h1>
         <p className="text-muted">A simple note taking app</p>
+        <Hello />
       </div>
     </div>
   );

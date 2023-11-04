@@ -10,7 +10,6 @@ import { useNavigate } from "react-router-dom";
 function App() {
   const nav = useNavigate();
   const [isAuthenticated, userHasAuthenticated] = useState(false);
-  const [isLoading, setIsLoading] = useState(false);
 
   function handleLogout() {
     userHasAuthenticated(false);
