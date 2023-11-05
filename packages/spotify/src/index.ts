@@ -5,8 +5,8 @@ export * as SpotifyClient from "./";
 
 console.log("INDEX EXECUTED");
 
-const client_id = "";
-const client_secret = "";
+const client_id = process.env.SPOTIFY_CLIENT_ID;
+const client_secret = process.env.SPOTIFY_CLIENT_SECRET;
 let token = "token";
 
 async function refreshToken() {
